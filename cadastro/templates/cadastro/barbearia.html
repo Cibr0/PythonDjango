@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Barbearia</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/estilo2.css' %}"
+    />
+  </head>
+  <body>
+    <h1>Barbearia</h1>
+
+    <img
+      src="{% static 'img/barbearia.jpeg' %}"
+      alt="Imagem Barbearia"
+      width="600"
+    />
+
+    <h2>Sobre a Barbearia</h2>
+    <p>
+      Localizada no coração da cidade a <b>Barbearia</b> traz para o mercado
+      inovação em cortes de cabelos.
+    </p>
+    <p><i>"Proporcionar auto-estima e qualidade de vida aos clientes".</i></p>
+
+    <p>
+      Oferecemos profissionais experientes e antenados às mudanças no mundo da
+      moda. Nosso atendimento possui padrão de excelência e agilidade.
+    </p>
+
+    <a href="{% url 'sair' %}">
+      <button>Sair</button>
+    </a>
+  </body>
+</html>

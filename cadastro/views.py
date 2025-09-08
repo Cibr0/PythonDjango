@@ -1,6 +1,10 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, redirect
 
-def primeiraPagina(request):
-    return HttpResponse("Fabricio Batista de Araujo - 01706468")
+def paginaExterna(request):
+    return render(request, 'cadastro/pagina.html')
 
+def barbearia(request):
+    return render(request, 'cadastro/barbearia.html')
+
+def sair(request):
+    return redirect('externa')  
